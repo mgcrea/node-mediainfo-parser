@@ -26,12 +26,12 @@ Parses [MediaInfo](https://mediaarea.net/en/MediaInfo) output with Javascript!
 
 ```js
 {
-  "$version": "0.1",
-  "$ref": "big_buck_bunny_1080p_h264.mov",
+  "_version": "0.1",
+  "_ref": "big_buck_bunny_1080p_h264.mov",
   "file": {
     "track": [
       {
-        "$type": "General",
+        "_type": "General",
         "count": 323,
         "countOfStreamOfThisKind": 1,
         "kindOfStream": "General",
@@ -85,7 +85,7 @@ Parses [MediaInfo](https://mediaarea.net/en/MediaInfo) output with Javascript!
         "comapplequicktimeplayermovieaudiomute": "(Binary)"
       },
       {
-        "$type": "Video",
+        "_type": "Video",
         "count": 334,
         "countOfStreamOfThisKind": 1,
         "kindOfStream": "Video",
@@ -151,7 +151,7 @@ Parses [MediaInfo](https://mediaarea.net/en/MediaInfo) output with Javascript!
         "matrixCoefficients": "BT.709"
       },
       {
-        "$type": "Audio",
+        "_type": "Audio",
         "count": 272,
         "countOfStreamOfThisKind": 1,
         "kindOfStream": "Audio",
@@ -194,7 +194,7 @@ Parses [MediaInfo](https://mediaarea.net/en/MediaInfo) output with Javascript!
         "taggedDate": "UTC 2008-05-27 18:43:05"
       },
       {
-        "$type": "Other",
+        "_type": "Other",
         "count": 78,
         "countOfStreamOfThisKind": 1,
         "kindOfStream": "Other",
