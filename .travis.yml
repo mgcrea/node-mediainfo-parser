@@ -6,7 +6,7 @@ node_js:
 
 env:
   global:
-    - CODE_CLIMATE_TOKEN=adf61bec7a4ee3049088a96c0591431382f9fb3f70b984a65c5360de96ad6f92
+    - CODECLIMATE_REPO_TOKEN=68c17fc16676c366aa5dae665c4272a5caf7f10d73e516586b2313cd6beb4cef
 
 before_script:
   - date --rfc-2822
@@ -21,4 +21,4 @@ after_script:
 
 addons:
   code_climate:
-    repo_token: adf61bec7a4ee3049088a96c0591431382f9fb3f70b984a65c5360de96ad6f92
+    repo_token: 68c17fc16676c366aa5dae665c4272a5caf7f10d73e516586b2313cd6beb4cef
