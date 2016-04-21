@@ -8,11 +8,22 @@ Parses [MediaInfo](https://mediaarea.net/en/MediaInfo) output with Javascript!
 
 ### Quickstart
 
-1. Parse mediainfo output (currently, only `XML` is supported)
+1. You can directly process a file path
+
+    ```js
+    import {exec as mediainfoExec} from 'mediainfo-parser';
+
+    const mediapath = '~/Downloads/big_buck_bunny_1080p_h264.mov';
+    mediainfoExec(mediapath, (err, obj) => {
+      console.log(obj);
+    })
+    ```
+
+1. You can also manually parse output (currently, only `XML` is supported)
 
     ```js
     import {exec} from 'child_process';
-    import mediainfoParser from 'mediainfo-parser';
+    import {parse as mediainfoParse} from 'mediainfo-parser';
 
     const mediapath = '~/Downloads/big_buck_bunny_1080p_h264.mov';
     exec(`mediainfo --Full --Output=XML "${mediapath}"`, (stderr, stdout) => {

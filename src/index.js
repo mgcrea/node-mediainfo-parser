@@ -1,5 +1,6 @@
 import {camelCase, mapValues} from 'lodash';
 import {parseString as xmlParseString} from 'xml2js';
+import childProcess from 'child_process';
 
 const isNumeric = (n) =>
   !isNaN(parseFloat(n)) && isFinite(n);
@@ -31,3 +32,11 @@ export default function parse(buffer, callback = () => {}) {
     callback(null, transformResponse(obj));
   });
 }
+
+function exec(mediaPath, callback = () => {}) {
+  childProcess.exec(`mediainfo --Full --Output=XML "${mediaPath}"`, (stderr, stdout) => {
+    parse(stdout, callback);
+  });
+}
+
+export {parse, exec};
