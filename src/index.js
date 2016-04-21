@@ -17,7 +17,7 @@ const transformResponse = (res) => {
 
 export default function parse(buffer, callback = () => {}) {
   xmlParseString(buffer, {
-    attrNameProcessors: [(name) => `$${name}`],
+    attrNameProcessors: [(name) => `_${name}`],
     explicitArray: false,
     explicitRoot: false,
     mergeAttrs: true,
