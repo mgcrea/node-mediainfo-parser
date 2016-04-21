@@ -1,6 +1,6 @@
 {
   "name": "mediainfo-parser",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Javascript MediaInfo parser",
   "main": "lib/index.js",
   "scripts": {
