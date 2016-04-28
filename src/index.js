@@ -13,7 +13,8 @@ const mapValue = (value) => {
 const transformResponse = (res) => {
   /* eslint-disable no-param-reassign */
   if (res && res.file) {
-    res.file.track = res.file.track.map(track => mapValues(track, mapValue));
+    const tracks = Array.isArray(res.file.track) ? res.file.track : [res.file.track];
+    res.file.track = tracks.map(track => mapValues(track, mapValue));
   }
   return res;
 };
