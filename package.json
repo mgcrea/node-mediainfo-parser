@@ -14,7 +14,7 @@
     "prepublish": "npm run compile"
   },
   "author": "Olivier Louvignes <olivier@mg-crea.com>",
-  "repository": "github:mgcrea/mediainfo-parser",
+  "repository": "github:mgcrea/node-mediainfo-parser",
   "license": "MIT",
   "dependencies": {
     "lodash": "^4.16.4",
