@@ -1,12 +1,6 @@
 {
-  "extends": "airbnb",
-  "parser": "babel-eslint",
+  "extends": "./../.eslintrc",
   "env": {
     mocha: true
-  },
-  "rules": {
-    "object-curly-spacing": [2, "never"],
-    "comma-dangle": [2, "never"],
-    "no-unused-vars": 1
   }
 }
