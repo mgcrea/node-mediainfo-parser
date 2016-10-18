@@ -1,5 +1,6 @@
 node_modules/
 .DS_Store
+yarn.lock
 *.log
 .nyc_output/
 coverage/
