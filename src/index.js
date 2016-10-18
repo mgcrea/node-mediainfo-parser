@@ -2,7 +2,7 @@ import {camelCase, mapValues} from 'lodash';
 import {parseString as xmlParseString} from 'xml2js';
 import childProcess from 'child_process';
 
-const isNumeric = (n) =>
+const isNumeric = n =>
   !isNaN(parseFloat(n)) && isFinite(n);
 
 const mapValue = (value) => {
@@ -21,7 +21,7 @@ const transformResponse = (res) => {
 
 export default function parse(buffer, callback = () => {}) {
   xmlParseString(buffer, {
-    attrNameProcessors: [(name) => `_${name}`],
+    attrNameProcessors: [name => `_${name}`],
     explicitArray: false,
     explicitRoot: false,
     mergeAttrs: true,
